@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.client.tsbuildinfo",
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["@citizenfx/client", "@types/node"],
+    "sourceMap": true,
+    "allowUnreachableCode": false,
+    "strictFunctionTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    // Injection
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["./src/config.ts", "./src/**/shared/*.ts", "./src/**/shared/**/*.ts", "./src/**/client/*.ts", "./src/**/client/**/*.ts", "./src/**/client.ts", "src/client.ts", "src/config.ts"],
+  "exclude": ["**/node_modules", "**/__tests__/*"]
+}
