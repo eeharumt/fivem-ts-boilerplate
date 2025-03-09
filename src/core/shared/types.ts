@@ -2,14 +2,6 @@
  * 共有型定義
  */
 
-/**
- * 座標型
- */
-export interface Vector3 {
-  x: number;
-  y: number;
-  z: number;
-}
 
 /**
  * プレイヤー情報

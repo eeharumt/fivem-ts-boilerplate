@@ -6,6 +6,8 @@ description 'FiveM TypeScriptプラグイン開発のためのボイラープレ
 author 'Your Name'
 version '1.0.0'
 
+node_version '22'
+
 client_script 'dist/client.js'
 server_script 'dist/server.js'
 
